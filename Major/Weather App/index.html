@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="input-container">
+            <input type="text" class="city-input" placeholder="Search City">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="loc-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="country">Verdantia</h4>
+                </div>
+                <h5 class="current-date regular-txt">Wed, 21 Aug</h5>
+            </div>
+
+            <div class="description-container">
+                <img src="images/weather/clouds.svg" alt="" class="weather-img">
+                <div class="weather-description">
+                    <h1 class="temp">29 ℃</h1>
+                    <h3 class="condition regular-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-condition">
+                <div class="condition">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value">55%</h5>
+                    </div>
+                </div>
+
+                <div class="condition">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value">55%</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <div class="forecast-items">
+                    <h5 class="forecast-date regular-txt">21 Aug</h5>
+                    <img src="images/weather/thunderstorm.svg" alt="" class="forecast-img">
+                    <h5 class="forecast-temp">29 ℃</h5>
+                </div>
+
+                <div class="forecast-items">
+                    <h5 class="forecast-date regular-txt">21 Aug</h5>
+                    <img src="images/weather/thunderstorm.svg" alt="" class="forecast-img">
+                    <h5 class="forecast-temp">29 ℃</h5>
+                </div>
+
+                <div class="forecast-items">
+                    <h5 class="forecast-date regular-txt">21 Aug</h5>
+                    <img src="images/weather/thunderstorm.svg" alt="" class="forecast-img">
+                    <h5 class="forecast-temp">29 ℃</h5>
+                </div>
+
+                <div class="forecast-items">
+                    <h5 class="forecast-date regular-txt">21 Aug</h5>
+                    <img src="images/weather/thunderstorm.svg" alt="" class="forecast-img">
+                    <h5 class="forecast-temp">29 ℃</h5>
+                </div>
+
+                <div class="forecast-items">
+                    <h5 class="forecast-date regular-txt">21 Aug</h5>
+                    <img src="images/weather/thunderstorm.svg" alt="" class="forecast-img">
+                    <h5 class="forecast-temp">29 ℃</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-city section-msg">
+            <img src="images/search-city.png" class="img-msg" alt="">
+            <div>
+                <h1>Search for a city</h1>
+                <h4 class="regular-txt">Find the weather of your city</h4>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
+<!-- JS -->
+<script src="script.js" defer></script>
