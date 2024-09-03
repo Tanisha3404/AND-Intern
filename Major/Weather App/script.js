@@ -13,7 +13,7 @@ const weatherSummary = document.querySelector(".weather-img");
 const currentDate = document.querySelector(".current-date");
 const forecastContainer = document.querySelector(".forecast-container");
 
-const apiKey = 'ef0917d4ebe6a019ae30a1e2089fe33b';
+const apiKey = ''; //your API Key
 
 searchBtn.addEventListener("click", () => {
     if (cityInput.value.trim() != '') {
@@ -34,7 +34,7 @@ cityInput.addEventListener("keydown", (event) => {
 })
 
 async function getFetchData(endpoint, city) {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/${endpoint}?q=${city}&appid=ef0917d4ebe6a019ae30a1e2089fe33b&units=metric`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/${endpoint}?q=${city}&appid=apiKey&units=metric`;
 
     const response = await fetch(apiUrl);
 
